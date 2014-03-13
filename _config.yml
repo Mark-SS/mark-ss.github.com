@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://Mark-SS.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: 龚亮的栖息地
+subtitle: 不积硅步 无以至千里
+author: 龚亮
 simple_search: https://www.google.com/search
 description:
 
@@ -95,3 +95,11 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+weibo_user: Mark_s_s
+dribbble_user:
+weibo_share: true # 是否开启微博分享按钮
+
+#Disqus comments
+disqus_short_name:markssgithubcom
+disqus_show_comment_count:true
