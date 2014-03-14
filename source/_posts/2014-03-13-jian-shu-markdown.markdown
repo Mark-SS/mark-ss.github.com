@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "简书Markdown"
+title: "Markdown"
 date: 2014-03-13 10:29:43 +0800
 comments: true
 categories: 
