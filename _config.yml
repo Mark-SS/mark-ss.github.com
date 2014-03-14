@@ -96,7 +96,7 @@ google_analytics_tracking_id:
 # Facebook Like
 facebook_like: false
 
-weibo_user: 2290900715
+weibo_user: 2290900715 #微博的数字ID 或者是域名ID
 dribbble_user:
 weibo_share: true # 是否开启微博分享按钮
 
