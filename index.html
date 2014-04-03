@@ -7,9 +7,7 @@
 	<meta name="author" content="龚亮">
 
 	
-	<meta name="description" content="Mar 26th, 2014 Comments ==与isEqual区别 == 主要是比较两个内存地址是否相同。
-isEqual 是比较两个数据对应哈希值是否相同。
-isEqual 首先判断两个对象是否类型一致，接着判断具体内容是否一致，如果类型不同直接return no。 &hellip;">
+	<meta name="description" content="Apr 3rd, 2014 Comments Associdated 关联对象 给已有的类有类别（category）的方式扩展属性。知道类别的一个关键的事实是，它是不能够包括属性和成员变量的。但是可以通过 &lt;objc/runtime.h>中的函数关联属性。 &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +81,91 @@ isEqual 首先判断两个对象是否类型一致，接着判断具体内容是
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-03T16:02:27+08:00" data-updated="true" itemprop="datePublished">Apr 3<span>rd</span>, 2014</time></div>
+		<div class="tags">
+
+</div>
+		
+			<span class="comments"><a href="/blog/2014/04/03/associdated-guan-lian-dui-xiang/#disqus_thread">Comments</a></span>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/04/03/associdated-guan-lian-dui-xiang/" itemprop="url">Associdated 关联对象</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<ul>
+<li>给已有的类有类别（category）的方式扩展属性。知道类别的一个关键的事实是，它是不能够包括属性和成员变量的。但是可以通过 &lt;objc/runtime.h>中的函数关联属性。</li>
+<li><p>例如我们一个UIViewController的类别。</p>
+
+<pre><code>  #import &lt;UIKit/UIkit.h&gt;
+
+  @interface UIViewController (YCCommon)
+
+  @propery (nonatomic, strong) id associdatedObject;
+
+  @end
+
+  ----------------------------------------------------------------------------
+
+  #import &lt;UIViewController+YCCommon&gt;  
+  #import &lt;objc/runtime.h&gt;
+
+  @implementation UIViewController (YCCommon)
+
+  @dynamic associdatedObject;
+
+  - (void)setAssocidatedObject:(id)object {  
+      objc_setAssociatedObject(self, @selector(associdatedObject), object, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+  }
+
+  - (id)associdatedObject {  
+      objc_getAssociatedObject(self, @selector(associdatedObject));
+  }
+
+
+  @end
+
+  //通常用static char key来标识属性最好 更简单的方式实现： 用上面的 selector
+
+  static const void *kAssocitaedObjectKey = &amp;kAssocitaedObjectKey;
+
+  - (void)setAssocidatedObject:(id)object {  
+      objc_setAssociatedObject(self, kAssocitaedObjectKey, object, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+  }
+
+  - (id)associdatedObject {  
+      objc_getAssociatedObject(self, kAssocitaedObjectKey);
+  }
+</code></pre></li>
+<li><p>&lt;objc/runtime.h> 函数主要有</p></li>
+<li>、 OBJC_EXPORT void <code>objc_setAssociatedObject(id object, const void *key, id value, objc_AssociationPolicy policy)</code></li>
+<li>OBJC_EXPORT id <code>objc_getAssociatedObject(id object, const void *key)</code></li>
+<li><p>OBJC_EXPORT void <code>objc_removeAssociatedObjects(id object)</code></p></li>
+<li><p>类别是扩展内核类，使用关联对象可以解决动态属性扩展实现。</p></li>
+</ul>
+
+
+<p>更多参考可以看 <a href="http://nshipster.cn/associated-objects">NSHipster</a></p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">

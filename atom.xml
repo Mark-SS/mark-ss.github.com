@@ -4,7 +4,7 @@
   <title><![CDATA[龚亮的栖息地]]></title>
   <link href="http://Mark-SS.github.io/atom.xml" rel="self"/>
   <link href="http://Mark-SS.github.io/"/>
-  <updated>2014-03-26T15:19:31+08:00</updated>
+  <updated>2014-04-03T16:35:19+08:00</updated>
   <id>http://Mark-SS.github.io/</id>
   <author>
     <name><![CDATA[龚亮]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[associdated 关联对象]]></title>
+    <link href="http://Mark-SS.github.io/blog/2014/04/03/associdated-guan-lian-dui-xiang/"/>
+    <updated>2014-04-03T16:02:27+08:00</updated>
+    <id>http://Mark-SS.github.io/blog/2014/04/03/associdated-guan-lian-dui-xiang</id>
+    <content type="html"><![CDATA[<ul>
+<li>给已有的类有类别（category）的方式扩展属性。知道类别的一个关键的事实是，它是不能够包括属性和成员变量的。但是可以通过 &lt;objc/runtime.h>中的函数关联属性。</li>
+<li><p>例如我们一个UIViewController的类别。</p>
+
+<pre><code>  #import &lt;UIKit/UIkit.h&gt;
+
+  @interface UIViewController (YCCommon)
+
+  @propery (nonatomic, strong) id associdatedObject;
+
+  @end
+
+  ----------------------------------------------------------------------------
+
+  #import &lt;UIViewController+YCCommon&gt;  
+  #import &lt;objc/runtime.h&gt;
+
+  @implementation UIViewController (YCCommon)
+
+  @dynamic associdatedObject;
+
+  - (void)setAssocidatedObject:(id)object {  
+      objc_setAssociatedObject(self, @selector(associdatedObject), object, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+  }
+
+  - (id)associdatedObject {  
+      objc_getAssociatedObject(self, @selector(associdatedObject));
+  }
+
+
+  @end
+
+  //通常用static char key来标识属性最好 更简单的方式实现： 用上面的 selector
+
+  static const void *kAssocitaedObjectKey = &amp;kAssocitaedObjectKey;
+
+  - (void)setAssocidatedObject:(id)object {  
+      objc_setAssociatedObject(self, kAssocitaedObjectKey, object, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+  }
+
+  - (id)associdatedObject {  
+      objc_getAssociatedObject(self, kAssocitaedObjectKey);
+  }
+</code></pre></li>
+<li><p>&lt;objc/runtime.h> 函数主要有</p></li>
+<li>、 OBJC_EXPORT void <code>objc_setAssociatedObject(id object, const void *key, id value, objc_AssociationPolicy policy)</code></li>
+<li>OBJC_EXPORT id <code>objc_getAssociatedObject(id object, const void *key)</code></li>
+<li><p>OBJC_EXPORT void <code>objc_removeAssociatedObjects(id object)</code></p></li>
+<li><p>类别是扩展内核类，使用关联对象可以解决动态属性扩展实现。</p></li>
+</ul>
+
+
+<p>更多参考可以看 <a href="http://nshipster.cn/associated-objects">NSHipster</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[==与isEqual区别]]></title>
