@@ -29,4 +29,8 @@ categories:
 
 - [QR-Code-Encoder-for-Objective-C](https://github.com/myang-git/QR-Code-Encoder-for-Objective-C) 二维码的生成和扫描。
 
-- [UI7Kit](https://github.com/youknowone/UI7Kit) 是一个iOS7风格GUI工具包补丁。
+- [UI7Kit](https://github.com/youknowone/UI7Kit) 是一个iOS7风格GUI工具包补丁。  
+
+
+		BANG1165550992CB7536B6F77853XIANGUO 
+
