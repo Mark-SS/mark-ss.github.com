@@ -25,3 +25,8 @@ categories:
 
 - [DACircularProgressView](https://github.com/danielamitay/DACircularProgress) 自定义倒计时View。
 
+- [Objective-C-HMTL-Parser](https://github.com/zootreeves/Objective-C-HMTL-Parser) 是一个用 ObjectiveC 编写的简易 HTML 解析器。  
+
+- [QR-Code-Encoder-for-Objective-C](https://github.com/myang-git/QR-Code-Encoder-for-Objective-C) 二维码的生成和扫描。
+
+- [UI7Kit](https://github.com/youknowone/UI7Kit) 是一个iOS7风格GUI工具包补丁。
