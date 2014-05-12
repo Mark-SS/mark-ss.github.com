@@ -53,5 +53,4 @@ categories:
 - 配置beacon筛选器，发射器。只有配置了过的ProximityUUID才可以在Beacons界面被搜索出来。  
 ![](http://www.markss.cn/images/AprilBeacon/transmitters.png)  
 ![](http://www.markss.cn/images/AprilBeacon/new-transmitters.png)
-
   
