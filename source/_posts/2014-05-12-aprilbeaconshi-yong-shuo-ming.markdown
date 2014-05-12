@@ -47,6 +47,10 @@ categories:
 ![](http://www.markss.cn/images/AprilBeacon/confirm-password.png)
  
     
-#### 3、设置：设置beacon的发射器，后台推送等等。
-![](http://www.markss.cn/images/AprilBeacon/setting.png)
+#### 3、设置界面
+- 设置界面主要有开启后台推送功能，手机靠近或者离开beacon区域时候开启，是否显示事例通知。  
+![](http://www.markss.cn/images/AprilBeacon/setting.png)  
+
+- 配置beacon筛选器，发射器。  
+![](http://www.markss.cn/images/AprilBeacon/transmitters)
   
