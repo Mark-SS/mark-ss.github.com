@@ -4,7 +4,7 @@
   <title><![CDATA[龚亮之塔]]></title>
   <link href="http://Mark-SS.github.io/atom.xml" rel="self"/>
   <link href="http://Mark-SS.github.io/"/>
-  <updated>2014-05-12T15:09:56+08:00</updated>
+  <updated>2014-05-12T15:37:42+08:00</updated>
   <id>http://Mark-SS.github.io/</id>
   <author>
     <name><![CDATA[龚亮]]></name>
@@ -65,17 +65,23 @@
 <h5>2.2 批量修改界面</h5>
 
 <ul>
-<li><p>可以批量更改设备ProximityUUID，Major，Minor，Measured Power，密码。ProximimityUUID, major, minor, mesasured Power, 密码格式同上面单个修改一致，增加了major， minor可以选择是否自增。 当ProximimityUUID填写后，会自动把周围能搜索到的此uuid的设备信息修改（其中有个注意的地方，如果某个beacon的密码和你修改时候输入的校对密码不一致会导致此个beacon修改失败）<br/>
+<li><p>可以批量更改设备ProximityUUID，Major，Minor，Measured Power，密码。ProximimityUUID, major, minor, mesasured Power, 密码格式同上面单个修改一致，增加了major， minor可以选择是否自增。 当ProximimityUUID填写后，会自动把周围能搜索到的此uuid的设备信息修改（其中有个注意的地方，如果某个beacon的密码和你修改时候输入的校对密码不一致会导致此个beacon修改失败)<br/>
 <img src="http://www.markss.cn/images/AprilBeacon/tools-configure.png" alt="" /></p></li>
-<li><p>密码说明如图
-<img src="http://www.markss.cn/images/AprilBeacon/new-password.png" alt="" />
+<li><p>密码说明如图<br/>
+<img src="http://www.markss.cn/images/AprilBeacon/new-password.png" alt="" /> <br/>
 <img src="http://www.markss.cn/images/AprilBeacon/confirm-password.png" alt="" /></p></li>
 </ul>
 
 
-<h4>3、设置：设置beacon的发射器，后台推送等等。</h4>
+<h4>3、设置界面</h4>
 
-<p> <img src="http://www.markss.cn/images/AprilBeacon/setting.png" alt="" /></p>
+<ul>
+<li><p>设置界面主要有开启后台推送功能，手机靠近或者离开beacon区域时候开启，是否显示事例通知。<br/>
+<img src="http://www.markss.cn/images/AprilBeacon/setting.png" alt="" /></p></li>
+<li><p>配置beacon筛选器，发射器。<br/>
+<img src="http://www.markss.cn/images/AprilBeacon/transmitters" alt="" /></p></li>
+</ul>
+
 ]]></content>
   </entry>
   
