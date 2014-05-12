@@ -1,26 +1,25 @@
 ---
 layout: post
-title: "[AprilBeacon](https://itunes.apple.com/cn/app/aprilbeacon/id847517010?mt=8)使用说明"
+title: "AprilBeacon使用说明"
 date: 2014-05-12 09:50:58 +0800
 comments: true
 categories: 
 ---
 
-# 软件简介
-## 软件介绍
-### 软件主要分为三大模块。 
-#### 1、Beacons界面
-- 搜索附近的beacon，包括信息有Major，minor， 距离。  
+# [AprilBeacon](https://itunes.apple.com/cn/app/aprilbeacon/id847517010?mt=8)介绍
+## 软件主要分为三大模块。 
+### 1、Beacons界面
+- 搜索附近的beacon，包括信息有Major，minor，距离，Rssi。  
 ![](http://www.markss.cn/images/AprilBeacon/beacons.png) 
  
 - 点击进入可以看到beacon距离和rssi强度。  
 ![](http://www.markss.cn/images/AprilBeacon/beacon-range.png)
 
-#### 2、工具界面
+### 2、工具界面
 - 查看周围蓝牙设备（里面包括单个修改beacon参数），批量修改beacon参数，校准beacon距离。
 ![](http://www.markss.cn/images/AprilBeacon/tools.png)  
  
-##### 2.1 周围蓝牙设备里面  
+#### 2.1 周围蓝牙设备
 - 可以查看周围有哪些蓝牙设备，在AprilBeacon里面目前暂时只显示名字叫AprilBeacon和BlueBeacon的beacon。  
 ![](http://www.markss.cn/images/AprilBeacon/tools-devices.png)  
  
@@ -38,7 +37,7 @@ categories:
 - 新密码：12位  
 保存时候需要你输入beacon验证密码（默认为 AprilBrother,注意大小写），修改完成之后会自动重启beacon，无需手动去beacon上按钮重启。
 
-##### 2.2 批量修改界面
+#### 2.2 批量修改界面
 - 可以批量更改设备ProximityUUID，Major，Minor，Measured Power，密码。ProximimityUUID, major, minor, mesasured Power, 密码格式同上面单个修改一致，增加了major， minor可以选择是否自增。 当ProximimityUUID填写后，会自动把周围能搜索到的此uuid的设备信息修改（其中有个注意的地方，如果某个beacon的密码和你修改时候输入的校对密码不一致会导致此个beacon修改失败)  
 ![](http://www.markss.cn/images/AprilBeacon/tools-configure.png)  
  
@@ -47,7 +46,7 @@ categories:
 ![](http://www.markss.cn/images/AprilBeacon/confirm-password.png)
  
     
-#### 3、设置界面
+### 3、设置界面
 - 设置界面主要有开启后台推送功能，手机靠近或者离开beacon区域时候开启，是否显示事例通知。  
 ![](http://www.markss.cn/images/AprilBeacon/setting.png)  
 
