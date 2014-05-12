@@ -51,7 +51,7 @@ categories:
 - 设置界面主要有开启后台推送功能，手机靠近或者离开beacon区域时候开启，是否显示事例通知。  
 ![](http://www.markss.cn/images/AprilBeacon/setting.png)  
 
-- 配置beacon筛选器，发射器。  
+- 配置beacon筛选器，发射器。只有配置了过的ProximityUUID才可以在Beacons界面被搜索出来。  
 ![](http://www.markss.cn/images/AprilBeacon/transmitters.png)
 ![](http://www.markss.cn/images/AprilBeacon/new-transmitters.png)
 
