@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AprilBeacon使用说明"
+title: "[AprilBeacon](https://itunes.apple.com/cn/app/aprilbeacon/id847517010?mt=8)使用说明"
 date: 2014-05-12 09:50:58 +0800
 comments: true
 categories: 
@@ -43,7 +43,7 @@ categories:
 ![](http://www.markss.cn/images/AprilBeacon/tools-configure.png)  
  
 - 密码说明如图  
-![](http://www.markss.cn/images/AprilBeacon/new-password.png)   
+![](http://www.markss.cn/images/AprilBeacon/new-password.png)  
 ![](http://www.markss.cn/images/AprilBeacon/confirm-password.png)
  
     
@@ -52,7 +52,7 @@ categories:
 ![](http://www.markss.cn/images/AprilBeacon/setting.png)  
 
 - 配置beacon筛选器，发射器。只有配置了过的ProximityUUID才可以在Beacons界面被搜索出来。  
-![](http://www.markss.cn/images/AprilBeacon/transmitters.png)
+![](http://www.markss.cn/images/AprilBeacon/transmitters.png)  
 ![](http://www.markss.cn/images/AprilBeacon/new-transmitters.png)
 
   
