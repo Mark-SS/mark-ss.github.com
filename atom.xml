@@ -4,7 +4,7 @@
   <title><![CDATA[龚亮之塔]]></title>
   <link href="http://Mark-SS.github.io/atom.xml" rel="self"/>
   <link href="http://Mark-SS.github.io/"/>
-  <updated>2014-05-12T11:15:25+08:00</updated>
+  <updated>2014-05-12T11:26:31+08:00</updated>
   <id>http://Mark-SS.github.io/</id>
   <author>
     <name><![CDATA[龚亮]]></name>
@@ -42,7 +42,7 @@
 <img src="http://www.markss.cn/images/AprilBeacon/tools-devices.png" alt="" /><br/>
 点击单个设备进入可以看到设备一些详细信息<br/>
 <img src="http://www.markss.cn/images/AprilBeacon/devices-detail.png" alt="" /><br/>
-点击<img src="http://www.markss.cn/images/Aprilbeacon/device-modified-button.png" alt="" />可以进入到修改设备参数界面<img src="http://www.markss.cn/images/aprilbeacon/tools-device-modifiy.png" alt="" /></p></li>
+点击<img src="http://www.markss.cn/images/AprilBeacon/device-modified-button.png" alt="" />可以进入到修改设备参数界面<img src="http://www.markss.cn/images/AprilBeacon/tools-device-modifiy.png" alt="" /></p></li>
 <li><p>3、设置界面。<br/>
 <img src="http://www.markss.cn/images/AprilBeacon/setting.png" alt="" /></p></li>
 </ul>
