@@ -13,11 +13,11 @@ categories:
 #### 2、工具：主要可以修改beacon的一些参数。 
 #### 3、设置：设置beacon的发射器，后台推送等等。
 - 1、Beacons界面。  
- ![](/Users/gongliang/octopress/source/images/AprilBeacon/beacons.png)  
+ ![](http://www.markss.cn/images/AprilBeacon/beacons.png)  
 
 - 2、工具界面。  
- ![](/Users/gongliang/octopress/source/images/AprilBeacon/tools.png)
+ ![](http://www.markss.cn/images/AprilBeacon/tools.png)
    
 - 3、设置界面。  
- ![](/Users/gongliang/octopress/source/images/AprilBeacon/tools-devices.png)
+ ![](http://www.markss.cn/images/AprilBeacon/tools-devices.png)
   
