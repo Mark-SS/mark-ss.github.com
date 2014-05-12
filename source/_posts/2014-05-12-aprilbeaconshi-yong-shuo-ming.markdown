@@ -20,15 +20,15 @@ categories:
 ![](http://www.markss.cn/images/AprilBeacon/tools.png)  
  
 #### 2.1 周围蓝牙设备
-- 可以查看周围有哪些蓝牙设备，在AprilBeacon里面目前暂时只显示名字叫AprilBeacon和BlueBeacon的beacon。  
+- 可以查看周围有哪些蓝牙设备，在AprilBeacon里面只列出名字叫AprilBeacon和BlueBeacon的设备。  
 ![](http://www.markss.cn/images/AprilBeacon/tools-devices.png)  
  
-- 点击单个设备进入可以看到设备一些详细信息。  
+- 点击单个设备进入可以看到设备详细信息。  
 ![](http://www.markss.cn/images/AprilBeacon/devices-detail.png)  
  
-- 点击![](http://www.markss.cn/images/AprilBeacon/device-modified-button.png)可以进入到修改设备参数界面  
+- 点击![](http://www.markss.cn/images/AprilBeacon/device-modified-button.png)可以进入到修改单个设备参数界面  
 ![](http://www.markss.cn/images/AprilBeacon/tools-device-modifiy.png)  
-- ProximimityUUID 格式必须是: ※※※※※※※※-※※※※-※※※※-※※※※-※※※※※※※※※※※※（'※' 字母或者数字， 8位-4位-4位-4位-12位 例如:E2C56DB5-DFFB-48D2-B060-D0F5A71096E0）。
+- ProximimityUUID 格式必须是: ########-####-####-################（'#' 字母或者数字 8位-4位-4位-4位-12位 例如:E2C56DB5-DFFB-48D2-B060-D0F5A71096E0）。
 - Major 范围是：0-65535。
 - Minor 范围是：0-65535。
 - Measured Power 范围是：-255-1。
