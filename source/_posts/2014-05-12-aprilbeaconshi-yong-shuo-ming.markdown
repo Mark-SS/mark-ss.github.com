@@ -13,7 +13,7 @@ categories:
 - 搜索附近的beacon，包括信息有Major，minor， 距离。  
 ![](http://www.markss.cn/images/AprilBeacon/beacons.png) 
  
-- 点击进入可以看到beacon距离和rssi强度。
+- 点击进入可以看到beacon距离和rssi强度。  
 ![](http://www.markss.cn/images/AprilBeacon/beacon-range.png)
 
 #### 2、工具界面
@@ -24,7 +24,7 @@ categories:
 - 可以查看周围有哪些蓝牙设备，在AprilBeacon里面目前暂时只显示名字叫AprilBeacon和BlueBeacon的beacon。  
 ![](http://www.markss.cn/images/AprilBeacon/tools-devices.png)  
  
-- 点击单个设备进入可以看到设备一些详细信息。 
+- 点击单个设备进入可以看到设备一些详细信息。  
 ![](http://www.markss.cn/images/AprilBeacon/devices-detail.png)  
  
 - 点击![](http://www.markss.cn/images/AprilBeacon/device-modified-button.png)可以进入到修改设备参数界面  
