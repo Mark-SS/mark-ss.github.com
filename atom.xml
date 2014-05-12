@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[龚亮之塔]]></title>
+  <title><![CDATA[Mark之塔]]></title>
   <link href="http://Mark-SS.github.io/atom.xml" rel="self"/>
   <link href="http://Mark-SS.github.io/"/>
-  <updated>2014-05-12T16:56:49+08:00</updated>
+  <updated>2014-05-12T17:00:09+08:00</updated>
   <id>http://Mark-SS.github.io/</id>
   <author>
-    <name><![CDATA[龚亮]]></name>
+    <name><![CDATA[Markss]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
