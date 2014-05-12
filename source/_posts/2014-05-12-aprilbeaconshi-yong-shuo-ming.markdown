@@ -16,8 +16,16 @@ categories:
  ![](http://www.markss.cn/images/AprilBeacon/beacons.png)  
 
 - 2、工具界面。  
- ![](http://www.markss.cn/images/AprilBeacon/tools.png)
+ ![](http://www.markss.cn/images/AprilBeacon/tools.png)  
+ ##### 主要说一下工具里面的一些常用功能。  
+ 其中设备进入可以查看周围有哪些蓝牙设备，在AprilBeacon里面目前暂时只显示名字叫AprilBeacon和BlueBeacon的蓝牙。  
+ ![](http://www.markss.cn/images/AprilBeacon/tools-devices.png)  
+ 点击单个设备进入可以看到设备一些详细信息  
+ ![](http://www.markss.cn/images/AprilBeacon/devices-detail.png)  
+ 点击![](http://www.markss.cn/images/Aprilbeacon/device-modified-button.png)可以进入到修改设备参数界面![](http://www.markss.cn/images/aprilbeacon/tools-device-modifiy.png)
+ 
+ 
    
 - 3、设置界面。  
- ![](http://www.markss.cn/images/AprilBeacon/tools-devices.png)
+ ![](http://www.markss.cn/images/AprilBeacon/setting.png)
   
