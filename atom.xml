@@ -4,7 +4,7 @@
   <title><![CDATA[龚亮之塔]]></title>
   <link href="http://Mark-SS.github.io/atom.xml" rel="self"/>
   <link href="http://Mark-SS.github.io/"/>
-  <updated>2014-05-06T14:04:36+08:00</updated>
+  <updated>2014-05-12T10:26:18+08:00</updated>
   <id>http://Mark-SS.github.io/</id>
   <author>
     <name><![CDATA[龚亮]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[AprilBeacon使用说明]]></title>
+    <link href="http://Mark-SS.github.io/blog/2014/05/12/aprilbeaconshi-yong-shuo-ming/"/>
+    <updated>2014-05-12T09:50:58+08:00</updated>
+    <id>http://Mark-SS.github.io/blog/2014/05/12/aprilbeaconshi-yong-shuo-ming</id>
+    <content type="html"><![CDATA[<h1>软件简介</h1>
+
+<h2>软件介绍</h2>
+
+<h3>软件主要分为三大模块。</h3>
+
+<h4>1、Beacons：主要负责搜索附近的beacon。</h4>
+
+<h4>2、工具：主要可以修改beacon的一些参数。</h4>
+
+<h4>3、设置：设置beacon的发射器，后台推送等等。</h4>
+
+<ul>
+<li><p>1、Beacons界面。<br/>
+<img src="http://Mark-SS.github.io/Users/gongliang/octopress/source/images/AprilBeacon/beacons.png" alt="" /></p></li>
+<li><p>2、工具界面。<br/>
+<img src="http://Mark-SS.github.io/Users/gongliang/octopress/source/images/AprilBeacon/tools.png" alt="" /></p></li>
+<li><p>3、设置界面。<br/>
+<img src="http://Mark-SS.github.io/Users/gongliang/octopress/source/images/AprilBeacon/tools-devices.png" alt="" /></p></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[易到用车iPhone端使用的第三方开源库]]></title>
