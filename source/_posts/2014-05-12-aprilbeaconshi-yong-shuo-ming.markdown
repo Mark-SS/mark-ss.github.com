@@ -22,7 +22,7 @@ categories:
  ![](http://www.markss.cn/images/AprilBeacon/tools-devices.png)  
  点击单个设备进入可以看到设备一些详细信息  
  ![](http://www.markss.cn/images/AprilBeacon/devices-detail.png)  
- 点击![](http://www.markss.cn/images/Aprilbeacon/device-modified-button.png)可以进入到修改设备参数界面![](http://www.markss.cn/images/aprilbeacon/tools-device-modifiy.png)
+ 点击![](http://www.markss.cn/images/AprilBeacon/device-modified-button.png)可以进入到修改设备参数界面![](http://www.markss.cn/images/AprilBeacon/tools-device-modifiy.png)
  
  
    
