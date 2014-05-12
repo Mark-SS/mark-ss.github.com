@@ -52,5 +52,7 @@ categories:
 ![](http://www.markss.cn/images/AprilBeacon/setting.png)  
 
 - 配置beacon筛选器，发射器。  
-![](http://www.markss.cn/images/AprilBeacon/transmitters)
+![](http://www.markss.cn/images/AprilBeacon/transmitters.png)
+![](http://www.markss.cn/images/AprilBeacon/new-transmitters.png)
+
   
