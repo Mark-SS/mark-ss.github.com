@@ -47,9 +47,8 @@ categories:
 
 #### 2.3 校准界面
 - 校准界面能搜索到附近的beacons按 未知，远， 近, 排列，点击beacon可以进入校准操作，校准完成之后会得到合适measured power值。
-- 
-
- 
+![](http://www.markss.cn/images/AprilBeacon/calibration1.png)  
+![](http://www.markss.cn/images/AprilBeacon/calibration2.png)  
     
 ### 3、设置界面
 - 设置界面主要有开启后台推送功能，手机靠近或者离开beacon区域时候开启，是否显示事例通知。  
