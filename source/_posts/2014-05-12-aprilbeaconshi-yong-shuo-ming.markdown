@@ -43,7 +43,12 @@ categories:
  
 - 密码说明如图  
 ![](http://www.markss.cn/images/AprilBeacon/new-password.png)  
-![](http://www.markss.cn/images/AprilBeacon/confirm-password.png)
+![](http://www.markss.cn/images/AprilBeacon/confirm-password.png)  
+
+#### 2.3 校准界面
+- 校准界面能搜索到附近的beacons按 未知，远， 近, 排列，点击beacon可以进入校准操作，校准完成之后会得到合适measured power值。
+- 
+
  
     
 ### 3、设置界面
