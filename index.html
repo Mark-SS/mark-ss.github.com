@@ -7,7 +7,8 @@
 	<meta name="author" content="Markss">
 
 	
-	<meta name="description" content="May 12th, 2014 Comments AprilBeacon使用说明 AprilBeacon介绍 软件主要分为三大模块。 1、Beacons界面 搜索附近的beacon，包括信息有Major，minor，距离，Rssi。 点击进入可以看到beacon距离和rssi强度。 2、工具界面 &hellip;">
+	<meta name="description" content="Sep 23rd, 2014 Comments Chnroutes和代码统计 使用VPN时候用chnroutes访问国内外 首先下载 chnroutes.py 。
+打开终端进入下载文件目录，执行： python chnroutes.py -p mac, 该目录下会生成两个文件 [ip-up] 和 &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -81,6 +82,67 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-23T12:50:54+08:00" data-updated="true" itemprop="datePublished">Sep 23<span>rd</span>, 2014</time></div>
+		<div class="tags">
+
+</div>
+		
+			<span class="comments"><a href="/blog/2014/09/23/chnrouteshe-dai-ma-tong-ji/#disqus_thread">Comments</a></span>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/09/23/chnrouteshe-dai-ma-tong-ji/" itemprop="url">Chnroutes和代码统计</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<h3>使用VPN时候用chnroutes访问国内外</h3>
+
+<ol>
+<li>首先下载 <a href="https://github.com/fivesheep/chnroutes">chnroutes.py</a> 。</li>
+<li>打开终端进入下载文件目录，执行： python chnroutes.py -p mac, 该目录下会生成两个文件 [ip-up] 和 [ip-down]。</li>
+<li>把这两个文件复制到 /etc/ppp 下，然后进入该目录执行: sudo chmod a+x ip-up ip-down</li>
+<li>测试一下，是否生效，终端执行: netstat -nr, 检查路由表的输出信息。连接VPN， 然后再次执行：netstat -nr， 你会发现路由表已经发生了变化。</li>
+<li><p>到此，访问国内外的网站，同时都是嘻唰唰了。</p>
+
+<p> ps: 停用chnroutes, 把 /etc/ppp 目录下的 ip-up 和 ip-down 删除就行了，删除之前，执行一次 ip-down，删除之后保险起见执行 sudo route -n flush。</p></li>
+</ol>
+
+
+<h3>统计代码行数</h3>
+
+<ol>
+<li>打开终端。</li>
+<li>cd到你项目的目录。</li>
+<li><p>输入如下命令：</p>
+
+<p> (1) 统计整个工程的所有文件的代码量已经总量<br/>
+ <code>find . "(" -name "*.m" -or -name "*.mm" -or -name "*.cpp" -or -name "*.h" -or -name "*.rss" ")" -print | xargs wc -l</code><br/>
+ (2) 统计总数<br/>
+ <code>find . -name '*.m' -exec cat {} \; | wc -l</code><br/>
+ <code>find . -name '*.h' -exec cat {} \; | wc -l</code><br/>
+ (3) 统计加排序
+ <code>find . -name  ‘*.swift’ -print | xargs wc -l | sort</code></p></li>
+</ol>
+
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
