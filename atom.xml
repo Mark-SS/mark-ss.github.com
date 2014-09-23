@@ -4,7 +4,7 @@
   <title><![CDATA[Mark之塔]]></title>
   <link href="http://Mark-SS.github.io/atom.xml" rel="self"/>
   <link href="http://Mark-SS.github.io/"/>
-  <updated>2014-05-12T17:16:04+08:00</updated>
+  <updated>2014-05-16T14:33:26+08:00</updated>
   <id>http://Mark-SS.github.io/</id>
   <author>
     <name><![CDATA[Markss]]></name>
@@ -68,6 +68,15 @@
 <li><p>密码说明如图<br/>
 <img src="http://www.markss.cn/images/AprilBeacon/new-password.png" alt="" /><br/>
 <img src="http://www.markss.cn/images/AprilBeacon/confirm-password.png" alt="" /></p></li>
+</ul>
+
+
+<h4>2.3 校准界面</h4>
+
+<ul>
+<li>校准界面能搜索到附近的beacons按 未知，远， 近, 排列，点击beacon可以进入校准操作，校准完成之后会得到合适measured power值。
+<img src="http://www.markss.cn/images/AprilBeacon/calibration1.png" alt="" /><br/>
+<img src="http://www.markss.cn/images/AprilBeacon/calibration2.png" alt="" /></li>
 </ul>
 
 
