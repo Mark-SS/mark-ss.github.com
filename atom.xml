@@ -4,7 +4,7 @@
   <title><![CDATA[Mark之塔]]></title>
   <link href="http://Mark-SS.github.io/atom.xml" rel="self"/>
   <link href="http://Mark-SS.github.io/"/>
-  <updated>2014-09-23T13:15:36+08:00</updated>
+  <updated>2014-09-23T13:17:07+08:00</updated>
   <id>http://Mark-SS.github.io/</id>
   <author>
     <name><![CDATA[Markss]]></name>
@@ -43,7 +43,7 @@
  (2) 统计总数<br/>
  <code>find . -name '*.m' -exec cat {} \; | wc -l</code><br/>
  <code>find . -name '*.h' -exec cat {} \; | wc -l</code><br/>
- (3) 统计加排序
+ (3) 统计加排序<br/>
  <code>find . -name  ‘*.swift’ -print | xargs wc -l | sort</code></p></li>
 </ol>
 
