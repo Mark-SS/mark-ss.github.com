@@ -26,7 +26,7 @@ categories:
 	(2) 统计总数  
 	`find . -name '*.m' -exec cat {} \; | wc -l`  
 	`find . -name '*.h' -exec cat {} \; | wc -l`  
-	(3) 统计加排序
+	(3) 统计加排序  
 	`find . -name  ‘*.swift’ -print | xargs wc -l | sort`
 	
 	
