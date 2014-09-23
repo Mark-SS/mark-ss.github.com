@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "about"
+title: "关于我"
 date: 2014-03-14 14:33
 comments: true
 sharing: true
