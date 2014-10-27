@@ -4,7 +4,7 @@
   <title><![CDATA[Mark之塔]]></title>
   <link href="http://Mark-SS.github.io/atom.xml" rel="self"/>
   <link href="http://Mark-SS.github.io/"/>
-  <updated>2014-09-23T13:36:40+08:00</updated>
+  <updated>2014-10-27T18:30:41+08:00</updated>
   <id>http://Mark-SS.github.io/</id>
   <author>
     <name><![CDATA[Markss]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[chnroutes和代码统计]]></title>
+    <title type="html"><![CDATA[Chnroutes和代码统计]]></title>
     <link href="http://Mark-SS.github.io/blog/2014/09/23/chnrouteshe-dai-ma-tong-ji/"/>
     <updated>2014-09-23T12:50:54+08:00</updated>
     <id>http://Mark-SS.github.io/blog/2014/09/23/chnrouteshe-dai-ma-tong-ji</id>
@@ -44,7 +44,7 @@
  <code>find . -name '*.m' -exec cat {} \; | wc -l</code><br/>
  <code>find . -name '*.h' -exec cat {} \; | wc -l</code><br/>
  (3) 统计加排序<br/>
- <code>find . -name  ‘*.swift’ -print | xargs wc -l | sort</code></p></li>
+ <code>find . -name  '*.swift' -print | xargs wc -l | sort</code></p></li>
 </ol>
 
 ]]></content>
@@ -158,7 +158,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[associdated 关联对象]]></title>
+    <title type="html"><![CDATA[Associdated 关联对象]]></title>
     <link href="http://Mark-SS.github.io/blog/2014/04/03/associdated-guan-lian-dui-xiang/"/>
     <updated>2014-04-03T16:02:27+08:00</updated>
     <id>http://Mark-SS.github.io/blog/2014/04/03/associdated-guan-lian-dui-xiang</id>
