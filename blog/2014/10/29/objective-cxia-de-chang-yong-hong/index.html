@@ -1,0 +1,333 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>objective-c下的常用宏 - Mark之塔</title>
+	<meta name="author" content="Markss">
+
+	
+	<meta name="description" content="Objective-c下的常用宏 iOS常用宏 宽度和高度 1
+2
+3
+4
+5
+6
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCRENN_HEIGHT [[UIScreen mainScreen &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Mark之塔" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://Mark-SS.github.io/blog/2014/10/29/objective-cxia-de-chang-yong-hong/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+	                document.write("<img src='/images/head.png' alt='Profile Picture' style='width: 160px;' />");
+</script>
+</div>
+<h1><a href="/">Mark之塔</a></h1>
+<p class="subtitle">不积硅步 无以至千里</p>
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/">主页</a></li>
+  <li><a href="/blog/archives">文章列表</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		<a class="weibo" href="http://www.weibo.com/2290900715" title="Weibo">Weibo</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+<hgroup>
+  <h1><a href="/">Mark之塔</a></h1>
+  
+    <h2>不积硅步 无以至千里</h2>
+  
+</hgroup>
+
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Objective-c下的常用宏</h1>
+	<div class="entry-content" itemprop="articleBody"><h3>iOS常用宏</h3>
+
+<p>宽度和高度</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define SCREEN_WIDTH                    [[UIScreen mainScreen] bounds].size.width</span>
+</span><span class='line'><span class="cp">#define SCRENN_HEIGHT                   [[UIScreen mainScreen] bounds].size.height</span>
+</span><span class='line'><span class="cp">#define STATUS_BAR_HEIGHT               (20.f)</span>
+</span><span class='line'><span class="cp">#define NAVIGATION_BAR_HEIGHT           (44.f)</span>
+</span><span class='line'><span class="cp">#define TAB_BAR_HEIGHT                  (49.f)</span>
+</span><span class='line'><span class="cp">#define CELL_DEFAULT_HEIGHT             (44.f)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>文件路径</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define PATH_OF_APP_HOME                NSHomeDirectory()</span>
+</span><span class='line'><span class="cp">#define PATH_OF_TEMP                    NSTemporaryDirectory()</span>
+</span><span class='line'><span class="cp">#define PATH_OF_DOCUMENT                [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]</span>
+</span><span class='line'><span class="cp">#define PATH_OF_CACHES                  [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>设备信息</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define CURRENT_SYSTEM_VERSION          [[[UIDevice currentDevice] systemVersion] floatValue]</span>
+</span><span class='line'><span class="cp">#define CURRENT_LANGUAGE                ([[NSLocale preferredLanguages] objectAtIndex:0])</span>
+</span><span class='line'><span class="cp">#define IS_PAD                          (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)</span>
+</span><span class='line'><span class="cp">#define IS_IPHONE                       (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)  </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>颜色</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define UIColorFromHexWithAlpha(hexValue,a) [UIColor colorWithRed:((float)((hexValue &amp; 0xFF0000) &gt;&gt; 16))/255.0 green:((float)((hexValue &amp; 0xFF00) &gt;&gt; 8))/255.0 blue:((float)(hexValue &amp; 0xFF))/255.0 alpha:a]</span>
+</span><span class='line'><span class="cp">#define UIColorFromHex(hexValue)            UIColorFromHexWithAlpha(hexValue,1.0)</span>
+</span><span class='line'><span class="cp">#define UIColorFromRGBA(r,g,b,a)            [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]</span>
+</span><span class='line'><span class="cp">#define UIColorFromRGB(r,g,b)               UIColorFromRGBA(r,g,b,1.0)  </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>打印</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#ifdef DEBUG</span>
+</span><span class='line'><span class="cp">#   define DLog(fmt, ...)                NSLog((@&quot;%s [Line %d] &quot; fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);</span>
+</span><span class='line'><span class="cp">#else</span>
+</span><span class='line'><span class="cp">#   define DLog(...)</span>
+</span><span class='line'><span class="cp">#endif</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define LOG_BOUNDS(view)                 DLog(@&quot;%@ bounds: %@&quot;, view, NSStringFromRect([view bounds]))</span>
+</span><span class='line'><span class="cp">#define LOG_FRAME(view)                  DLog(@&quot;%@ frame: %@&quot;, view, NSStringFromRect([view frame]))</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define NSStringFromBool(B)              (B ? @&quot;YES&quot; : @&quot;NO&quot;)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>图片/资源</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define RESOURCE_PATH(name, ext)         [[NSBundle mainBundle] pathForResource:(name) ofType:(ext)]</span>
+</span><span class='line'><span class="cp">#define PNG_PATH(name)                   RESOURCE_PATH(name, @&quot;png&quot;)</span>
+</span><span class='line'><span class="cp">#define JPG_PATH(name)                   RESOURCE_PATH(name, @&quot;jpg&quot;)</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define LOAD_IMAGE(name, ext)           [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:name ofType:ext]]</span>
+</span><span class='line'><span class="cp">#define IMAGE_NAMED(name)               [UIImage imageNamed:name]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>字符串</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define LOCAL_STRING(x)                 NSLocalizedString(x, nil)</span>
+</span><span class='line'><span class="cp">#define IS_NULL(x)                      (!x || [x isKindOfClass:[NSNull class]])</span>
+</span><span class='line'><span class="cp">#define IS_EMPTY_STRING(x)              (IS_NULL(x) || [x isEqual:@&quot;&quot;] || [x isEqual:@&quot;(null)&quot;])  </span>
+</span><span class='line'><span class="cp">#define NSStringFromInt(int)            [NSString stringWithFormat:@&quot;%d&quot;, int]</span>
+</span><span class='line'><span class="cp">#define NSStringFromFloat(float)        [NSString stringWithFormat:@&quot;%f&quot;, float]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>字体</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define BOLD_SYSTEM_FONT(size)          [UIFont boldSystemFontOfSize:size]</span>
+</span><span class='line'><span class="cp">#define SYSTEM_FONT(size)               [UIFont systemFontOfSize:size]</span>
+</span><span class='line'><span class="cp">#define FONT(name, size)                [UIFont fontWithName:(name) size:(size)]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>view圆角</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define VIEW_RADIUS(view, radius) \</span>
+</span><span class='line'><span class="cp">[view.layer setCornerRadius:(radius)]; \</span>
+</span><span class='line'><span class="cp">[view.layer setMasksToBounds:YES]</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define VIEW_BORDER_RADIUS(view, radius, width, color) \</span>
+</span><span class='line'><span class="cp">VIEW_RADIUS(view, radius); \</span>
+</span><span class='line'><span class="cp">[view.layer setBorderWidth:(Width)]; \</span>
+</span><span class='line'><span class="cp">[View.layer setBorderColor:[color CGColor]]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>模拟器真机</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#if TARGET_OS_IPHONE</span>
+</span><span class='line'><span class="cm">/** iPhone Device */</span>
+</span><span class='line'><span class="cp">#endif</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#if TARGET_IPHONE_SIMULATOR</span>
+</span><span class='line'><span class="cm">/** iPhone Simulator */</span>
+</span><span class='line'><span class="cp">#endif</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+	
+	<a class="addthis_button_sinaweibo"></a>
+	
+	
+	
+	
+	
+	<a class="addthis_button_compact"></a>
+	<a class="addthis_counter addthis_bubble_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2014 - Markss -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'markss';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://Mark-SS.github.io/blog/2014/10/29/objective-cxia-de-chang-yong-hong/';
+        var disqus_url = 'http://Mark-SS.github.io/blog/2014/10/29/objective-cxia-de-chang-yong-hong/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>
