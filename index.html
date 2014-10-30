@@ -7,8 +7,14 @@
 	<meta name="author" content="Markss">
 
 	
-	<meta name="description" content="Sep 23rd, 2014 Comments Chnroutes和代码统计 使用VPN时候用chnroutes访问国内外 首先下载 chnroutes.py 。
-打开终端进入下载文件目录，执行： python chnroutes.py -p mac, 该目录下会生成两个文件 [ip-up] 和 &hellip;">
+	<meta name="description" content="Oct 29th, 2014 Comments Objective-c下的常用宏 iOS常用宏 宽度和高度 1
+2
+3
+4
+5
+6
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -84,6 +90,211 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-29T15:11:39+08:00" data-updated="true" itemprop="datePublished">Oct 29<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+</div>
+		
+			<span class="comments"><a href="/blog/2014/10/29/objective-cxia-de-chang-yong-hong/#disqus_thread">Comments</a></span>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/10/29/objective-cxia-de-chang-yong-hong/" itemprop="url">Objective-c下的常用宏</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<h3>iOS常用宏</h3>
+
+<p>宽度和高度</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define SCREEN_WIDTH                    [[UIScreen mainScreen] bounds].size.width</span>
+</span><span class='line'><span class="cp">#define SCRENN_HEIGHT                   [[UIScreen mainScreen] bounds].size.height</span>
+</span><span class='line'><span class="cp">#define STATUS_BAR_HEIGHT               (20.f)</span>
+</span><span class='line'><span class="cp">#define NAVIGATION_BAR_HEIGHT           (44.f)</span>
+</span><span class='line'><span class="cp">#define TAB_BAR_HEIGHT                  (49.f)</span>
+</span><span class='line'><span class="cp">#define CELL_DEFAULT_HEIGHT             (44.f)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>文件路径</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define PATH_OF_APP_HOME                NSHomeDirectory()</span>
+</span><span class='line'><span class="cp">#define PATH_OF_TEMP                    NSTemporaryDirectory()</span>
+</span><span class='line'><span class="cp">#define PATH_OF_DOCUMENT                [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]</span>
+</span><span class='line'><span class="cp">#define PATH_OF_CACHES                  [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>设备信息</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define CURRENT_SYSTEM_VERSION          [[[UIDevice currentDevice] systemVersion] floatValue]</span>
+</span><span class='line'><span class="cp">#define CURRENT_LANGUAGE                ([[NSLocale preferredLanguages] objectAtIndex:0])</span>
+</span><span class='line'><span class="cp">#define IS_PAD                          (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)</span>
+</span><span class='line'><span class="cp">#define IS_IPHONE                       (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)  </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>颜色</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define UIColorFromHexWithAlpha(hexValue,a) [UIColor colorWithRed:((float)((hexValue &amp; 0xFF0000) &gt;&gt; 16))/255.0 green:((float)((hexValue &amp; 0xFF00) &gt;&gt; 8))/255.0 blue:((float)(hexValue &amp; 0xFF))/255.0 alpha:a]</span>
+</span><span class='line'><span class="cp">#define UIColorFromHex(hexValue)            UIColorFromHexWithAlpha(hexValue,1.0)</span>
+</span><span class='line'><span class="cp">#define UIColorFromRGBA(r,g,b,a)            [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]</span>
+</span><span class='line'><span class="cp">#define UIColorFromRGB(r,g,b)               UIColorFromRGBA(r,g,b,1.0)  </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>打印</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#ifdef DEBUG</span>
+</span><span class='line'><span class="cp">#   define DLog(fmt, ...)                NSLog((@&quot;%s [Line %d] &quot; fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);</span>
+</span><span class='line'><span class="cp">#else</span>
+</span><span class='line'><span class="cp">#   define DLog(...)</span>
+</span><span class='line'><span class="cp">#endif</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define LOG_BOUNDS(view)                 DLog(@&quot;%@ bounds: %@&quot;, view, NSStringFromRect([view bounds]))</span>
+</span><span class='line'><span class="cp">#define LOG_FRAME(view)                  DLog(@&quot;%@ frame: %@&quot;, view, NSStringFromRect([view frame]))</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define NSStringFromBool(B)              (B ? @&quot;YES&quot; : @&quot;NO&quot;)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>图片/资源</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define RESOURCE_PATH(name, ext)         [[NSBundle mainBundle] pathForResource:(name) ofType:(ext)]</span>
+</span><span class='line'><span class="cp">#define PNG_PATH(name)                   RESOURCE_PATH(name, @&quot;png&quot;)</span>
+</span><span class='line'><span class="cp">#define JPG_PATH(name)                   RESOURCE_PATH(name, @&quot;jpg&quot;)</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define LOAD_IMAGE(name, ext)           [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:name ofType:ext]]</span>
+</span><span class='line'><span class="cp">#define IMAGE_NAMED(name)               [UIImage imageNamed:name]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>字符串</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define LOCAL_STRING(x)                 NSLocalizedString(x, nil)</span>
+</span><span class='line'><span class="cp">#define IS_NULL(x)                      (!x || [x isKindOfClass:[NSNull class]])</span>
+</span><span class='line'><span class="cp">#define IS_EMPTY_STRING(x)              (IS_NULL(x) || [x isEqual:@&quot;&quot;] || [x isEqual:@&quot;(null)&quot;])  </span>
+</span><span class='line'><span class="cp">#define NSStringFromInt(int)            [NSString stringWithFormat:@&quot;%d&quot;, int]</span>
+</span><span class='line'><span class="cp">#define NSStringFromFloat(float)        [NSString stringWithFormat:@&quot;%f&quot;, float]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>字体</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define BOLD_SYSTEM_FONT(size)          [UIFont boldSystemFontOfSize:size]</span>
+</span><span class='line'><span class="cp">#define SYSTEM_FONT(size)               [UIFont systemFontOfSize:size]</span>
+</span><span class='line'><span class="cp">#define FONT(name, size)                [UIFont fontWithName:(name) size:(size)]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>view圆角</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#define VIEW_RADIUS(view, radius) \</span>
+</span><span class='line'><span class="cp">[view.layer setCornerRadius:(radius)]; \</span>
+</span><span class='line'><span class="cp">[view.layer setMasksToBounds:YES]</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define VIEW_BORDER_RADIUS(view, radius, width, color) \</span>
+</span><span class='line'><span class="cp">VIEW_RADIUS(view, radius); \</span>
+</span><span class='line'><span class="cp">[view.layer setBorderWidth:(Width)]; \</span>
+</span><span class='line'><span class="cp">[View.layer setBorderColor:[color CGColor]]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>模拟器真机</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="cp">#if TARGET_OS_IPHONE</span>
+</span><span class='line'><span class="cm">/** iPhone Device */</span>
+</span><span class='line'><span class="cp">#endif</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#if TARGET_IPHONE_SIMULATOR</span>
+</span><span class='line'><span class="cm">/** iPhone Simulator */</span>
+</span><span class='line'><span class="cp">#endif</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
